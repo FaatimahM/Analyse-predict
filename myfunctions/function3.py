@@ -1,5 +1,5 @@
 def date_parser(dates):
-    new_dates = []
-    for i in dates:
-        new_dates.append(i.split(' ')[0])
-    return new_dates
+     new_list = (dates[0:10] for dates in dates)
+     answer = list(new_list)
+     return answer
+    
