@@ -1,11 +1,15 @@
 def dictionary_of_metrics(items):
     import numpy as np
-    gauteng_arr = np.array([items])
-    keys_arr = np.array(['mean', 'median', 'std', 'var', 'min', 'max'])
-    values_arr = np.array([np.mean(gauteng_arr), np.median(gauteng_arr), np.std(gauteng_arr, ddof = 1),
-                           np.var(gauteng_arr, ddof = 1), np.min(gauteng_arr), np.max(gauteng_arr)])
-    rounded_arr = np.around(values_arr, 2)
-    dict_metrics = {}
-    for keys, values in zip(keys_arr, rounded_arr):
-        dict_metrics[keys] = values
-    return dict_metrics
+    ave = round(np.mean(items),2)
+    median = round(np.median(items),2)
+    variance = round(np.var(items, ddof = 1),2)
+    standard_dev = round(np.std(items, ddof = 1),2)
+    mini = min(items)
+    maxi = max(items)
+    a= {'mean': ave,
+        'median': median,
+        'variance': variance,
+        'standard deviation': standard_dev,
+        'min': mini,
+        'max': maxi}
+    return a
