@@ -8,4 +8,4 @@ def dictionary_of_metrics(items):
     dict_metrics = {}
     for keys, values in zip(keys_arr, rounded_arr):
         dict_metrics[keys] = values
-    return dict_metrics
+    return (dict_metrics)
