@@ -1,10 +1,10 @@
-from Analyse-predict import date_parser
-from Analyse-predict import dict_metrics
-from Analyse-predict import extrct_hashtags
-from Analyse-predict import five_num_summary
-from Analyse-predict import number_of_tweets
-from Analyse-predict import word_split
-from Analyse-predict import words_remover
+from analysepredict import date_parser
+from analysepredict import dict_metrics
+from analysepredict import extrct_hashtags
+from analysepredict import five_num_summary
+from analysepredict import number_of_tweets
+from analysepredict import word_split
+from analysepredict import words_remover
 import pandas as pd
 import numpy as np
 ebp_url = 'https://raw.githubusercontent.com/Explore-AI/Public-Data/master/Data/electrification_by_province.csv'
