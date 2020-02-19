@@ -1,6 +1,18 @@
 def word_splitter(df):
-    """Takes a pandas dataframe as an input, splits sentences from the 'Tweets' column and places these sentences into a new column called 
-    'Split Tweets'. 
     """
+    Splits the sentences in a dataframe's column into a list of the separate words. 
+    The created lists should be placed in a column named 'Split Tweets' in the original dataframe.
+
+    parameters
+    ----------
+    df: Dataframe
+        It should take a pandas dataframe as an input.
+
+    Returns
+    -------
+    df: DataFrame
+        The function should return the modified dataframe.
+    """
+
     df['Split Tweets'] = df['Tweets'].str.lower().str.split()
     return df
