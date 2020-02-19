@@ -25,9 +25,10 @@ def extract_municipality_hashtags(df):
     df['municipality'] = muni_list
     
     #Hashtag column
-    
+    # create a list: hash_list
     hash_list = []
     for i in df['Tweets']:
+        # create a list: spl_str & innerlist
         spl_str = []
         innerlist = []
         flag = 0

@@ -1,4 +1,5 @@
 def five_num_summary(items):
+    # Import numpy
     import numpy as np
     gauteng_arr1 = np.array([items])
     keys_arr1 = np.array(['max', 'median', 'min', 'q1', 'q3'])
