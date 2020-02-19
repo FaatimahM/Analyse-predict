@@ -7,3 +7,12 @@
 5. A function which returns the Number of tweets per day,
 6. A word splitter,
 7. A stop word remover 
+
+## Building this package locally
+`python setup.py sdist`
+
+## installing this package from GitHub
+`pip install git+https://github.com/FaatimahM/Analyse-predict.git`
+
+## updating this package from GitHub
+`pip install --upgrade git+https://github.com/FaatimahM/Analyse-predict.git`
