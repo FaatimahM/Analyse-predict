@@ -1,4 +1,21 @@
 def stop_words_remover(df):
+    """ 
+    Removes english stop words from a tweet.
+
+    parameters
+    ----------
+    df:Dataframe
+       It should take a pandas dataframe as input.
+
+    Returns
+    -------
+    df:Dataframe
+       The function should return the modified dataframe.
+    """
+       
+
+
+
     stop_words_dict = {
     'stopwords':[
         'where', 'done', 'if', 'before', 'll', 'very', 'keep', 'something', 'nothing', 'thereupon', 
