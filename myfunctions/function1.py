@@ -1,4 +1,5 @@
 def dictionary_of_metrics(items):
+    # Import numpy
     import numpy as np
     gauteng_arr = np.array([items])
     keys_arr = np.array(['mean', 'median', 'std', 'var', 'min', 'max'])
@@ -6,6 +7,7 @@ def dictionary_of_metrics(items):
                            np.var(gauteng_arr, ddof = 1), np.min(gauteng_arr), np.max(gauteng_arr)])
     rounded_arr = np.around(values_arr, 2)
     dict_metrics = {}
+    #Zip the rounded off arrays
     for keys, values in zip(keys_arr, rounded_arr):
         dict_metrics[keys] = values
     return dict_metrics
