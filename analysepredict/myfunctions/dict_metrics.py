@@ -1,4 +1,23 @@
 def dictionary_of_metrics(items):
+    """ 
+    Takes a list(items) of numbers as an input, returns a dictionary containing the mean, median, variance, standard deviation, minimum and maximum of
+    of items.   
+
+    Parameters
+    ----------
+    items: a list 
+
+    Returns
+    -------
+    dict_metrics: a dictionary in the format {'mean': mean of item ,
+                                             'median': median of item ,
+                                             'var': variance of item,
+                                             'std': standard deviation of item,
+                                             'min': minimum of item,
+                                             'max': maximum of item}
+
+
+    """
     import numpy as np
     gauteng_arr = np.array([items])
     keys_arr = np.array(['mean', 'median', 'std', 'var', 'min', 'max'])
